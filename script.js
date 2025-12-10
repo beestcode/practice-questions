@@ -1,5 +1,10 @@
 //FIZZBUZZ
 
 for (let i=1; i<=100; i++) {
-    console.log((i % 3 === 0 ? 'Fizz' : '') + (i % 5 === 0 ? 'Buzz' : '') || i);
+    let output = '';
+
+    if (i % 3===0) output +="fizz";
+    if (i % 5===0) output +="buzz";
+    
+    console.log(i + " " + (output||i));
 }
