@@ -1,10 +1,19 @@
-//convert minutes to hours and minutes
+//FIZZBUZZ
 
-convert = (minutes)=> {
-    let hours = Math.floor(minutes / 60);
-    let remainingminutes = minutes % 60
-
-    console.log(`${hours} hours and ${remainingminutes} minutes`);
+function fizzbuzz(){
+    for (let i=1; i<=100; i++){
+        if (i % 3===0 && i % 5===0){
+            console.log("fizzbuzz")
+        }
+        else if (i % 3===0) {
+            console.log("fizz")
+        }
+        else if (i % 5===0) {
+            console.log("buzz")
+        }
+        else {
+            console.log(i)
+        }
+    }
 }
-
-convert(145)
+fizzbuzz()
