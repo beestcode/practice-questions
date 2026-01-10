@@ -1,9 +1,10 @@
 function vowel(word){
     let vowels = "aioue"
-    let letters = word.split("")
+    //we wont split it because strings are already itereble
+    // let letters = word.split("")
     let count = 0
 
-    for (let i of letters){
+    for (let i of word){
         if(vowels.includes(i)){
             count++
         }
