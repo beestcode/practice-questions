@@ -1,4 +1,4 @@
-function vowel(word){
+function vowel1(word){
     let vowels = "aioue"
     //we wont split it because strings are already itereble
     // let letters = word.split("")
@@ -11,4 +11,19 @@ function vowel(word){
     }
     console.log(`we have ${count} vowels in this word`)
 }
-vowel("hnhgbyhnuhjkmki,ijmhybgfcsz")
+vowel1("hnhgbyhnuhjkmki,ijmhybgfcsz")
+
+//for loop
+const vowel2 = function(word){
+    let vowels = 'aeiou'
+    let count = 0
+
+    for (i=0; i<word.length; i++){
+        if (vowels.includes(word[i])){
+            count++
+        }
+    }
+    console.log(`we have ${count} vowels in this word`)
+}
+
+vowel2("hello")
