@@ -6,7 +6,6 @@ function vowel(word){
     for (let i of letters){
         if(vowels.includes(i)){
             count++
-
         }
     }
     console.log(`we have ${count} vowels in this word`)
