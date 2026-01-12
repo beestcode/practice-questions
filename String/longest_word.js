@@ -14,10 +14,17 @@ function longest(sentence){
             all_words.push(w)
         }
     }
-    // console.log(`"${longest}" is your longest word`)
-    console.log(`${all_words} are your longest words.`)
+    
+    
+    if(all_words.length > 1){
+        console.log(`"${all_words}" are your longest words.`)
+    }
+    else{
+        console.log(`"${longest}" is your longest word`)
+    }
+
 }
 
-// longest("hey i was just checking that which words is the longest in this sentence")
-longest("sun bat row")
+longest("hey i was just checking that which words are the longest in this sentence")
+longest("sun bat row bowl")
 
