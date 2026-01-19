@@ -15,10 +15,9 @@ const change2 = function(sentence,oldword,newword){
     console.log(replaced)
 }
 change2("the cat is so big", "cat","bat")
-
-
+                                                                                                                                                                                                                                            
 //with regex
-const change3=(sentence,oldword,newword)=>{
+const hange3=(sentence,oldword,newword)=>{
     let regex= RegExp(oldword, "gi");
     let replaced= sentence.replace(regex,newword)
     console.log(replaced)
