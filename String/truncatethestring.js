@@ -1,6 +1,6 @@
 function truncate(val){
     if(val.length > 10){
-        console.log(val.slice(0,4) + "...")
+        console.log(val.split(" ").slice(0,3).join(" ") + "...")
     }
 }
 truncate("hey i was just testing if this works")
