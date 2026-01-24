@@ -11,3 +11,13 @@ function camelCase(val){
 }
 console.log(camelCase("hello_world"))
 console.log(camelCase("hello_world_and-you"))
+
+//using map and regex
+function camelCase(val){
+    return val
+        .toLowerCase()
+        .split(/[-_]/)
+        .map((w, i) => i === 0 ? w : w[0].toUpperCase() + w.slice(1))
+        .join('');
+}
+console.log(camelCase("hello_world"));
