@@ -9,3 +9,13 @@ function capital(val){
     console.log(count)
 }
 capital("hey I Was just Checking how Many Words start from Capital Letter")
+
+//using map and reduce
+function capital2(val) {
+    return val
+        .split(" ")
+        .map(word => word[0] === word[0].toUpperCase())
+        .reduce((a, b) => a + b, 0);
+}
+
+console.log(capital2("hey I Was just Checking how Many Words start from Capital Letter"));
