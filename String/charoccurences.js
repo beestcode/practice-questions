@@ -1,6 +1,13 @@
 function occurences(val){
-    let count = 0
-    let char = val.split("")
-    let word = val.split("").map(char => char === char ? count++ : char)
+    let count = {}
+    for(let char of val){
+        if(count[char]){
+            count[char]++
+        }
+        else{
+            count[char]=1
+        }
+    }
+    console.log(count)
 }
-occurences("hello")
+occurences("hellooo")
